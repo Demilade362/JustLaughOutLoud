@@ -11,9 +11,6 @@
   getRequest().then((value) => {
     const list = document.getElementById('text');
     list.innerHTML = `<li class="list-group-item lead rounded shadow-sm d-flex justify-content-between">${value.attachments[0]["text"]}
-    <button class="btn btn-warning text-white btn-sm">
-        Report Joke
-    </button>
     </li>`;
     submitBtn.addEventListener('click', function(){
       setTimeout(location.reload(), 60);
