@@ -1,4 +1,7 @@
 {
+  const yourDate = document.querySelector("#date");
+  let yearDate = new Date();
+  yourDate.innerText = yearDate.getFullYear();
   const submitBtn = document.querySelector('#submit');
   async function getRequest(){
     const requestJokes = await fetch("https://icanhazdadjoke.com/slack");
